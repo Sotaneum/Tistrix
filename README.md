@@ -70,6 +70,7 @@ Tistory Blog Skin을 위한 Tistory API 라이브러리입니다.
 - [ ] Build
 - [ ] skin.html 자동 수정
 - [ ] package deploy
+- [ ] blue_pill/red_pill id 값 변경 옵션
 
 ### Test
 

@@ -1,134 +1,391 @@
-<div id="blue_pill"></div>
-<div id="red_pill">
+<div id="tistrix">
   <s_t3>
-    <img
-      id="profile"
-      src="[##_image_##]"
-      width="50"
-      height="50"
-      alt="프로필사진"
-    />
-    <a id="title" href="[##_blog_link_##]">[##_title_##]</a>
-    <s_sidebar>
-      <s_sidebar_element>
-        <div id="category_list">[##_category_list_##]</div>
-      </s_sidebar_element>
-      <s_sidebar_element>
-        <div id="blog_menu">[##_blog_menu_##]</div>
-      </s_sidebar_element>
-      <s_sidebar_element>
-        <div id="recent_comments">
-          <ul id="recentComments">
+    <div class="blogInfo">
+      <a href="[##_blog_link_##]">[##_title_##]</a>
+      <div class="imageUrl">[##_image_##]</div>
+      <div class="description">[##_desc_##]</div>
+      <div class="bloggerName">[##_blogger_##]</div>
+      <div class="rssFeedUrl">[##_rss_url_##]</div>
+      <div class="tagLogUrl">[##_taglog_link_##]</div>
+      <div class="guestbookUrl">[##_guestbook_link_##]</div>
+      <div class="menu">[##_blog_menu_##]</div>
+    </div>
+    <div class="sidebar">
+      <s_sidebar>
+        <s_sidebar_element>
+          <s_rct_notice>
+            <ul class="recentNotice">
+              <s_rct_notice_rep>
+                <li>
+                  <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                </li>
+              </s_rct_notice_rep>
+            </ul>
+          </s_rct_notice>
+        </s_sidebar_element>
+        <s_sidebar_element>
+          <ul class="recentPost">
+            <s_rctps_rep>
+              <li>
+                <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                <div class="cnt">[##_rctps_rep_rp_cnt_##]</div>
+                <div class="author">[##_rctps_rep_author_##]</div>
+                <div class="date">[##_rctps_rep_date_##]</div>
+                <div class="createDate">[##_rctps_rep_simple_date_##]</div>
+                <s_rctps_rep_thumbnail>
+                  <div class="thumbnail">[##_rctps_rep_thumbnail_##]</div>
+                </s_rctps_rep_thumbnail>
+                <div class="category">
+                  <a href="[##_rctps_rep_category_link_##]"
+                    >[##_rctps_rep_category_##]</a
+                  >
+                </div>
+              </li>
+            </s_rctps_rep>
+          </ul>
+        </s_sidebar_element>
+        <s_sidebar_element>
+          <ul class="popularPost">
+            <s_rctps_popular_rep>
+              <li>
+                <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                <div class="cnt">[##_rctps_rep_rp_cnt_##]</div>
+                <div class="author">[##_rctps_rep_author_##]</div>
+                <div class="date">[##_rctps_rep_date_##]</div>
+                <div class="createDate">[##_rctps_rep_simple_date_##]</div>
+                <s_rctps_rep_thumbnail>
+                  <div class="thumbnail">[##_rctps_rep_thumbnail_##]</div>
+                </s_rctps_rep_thumbnail>
+                <div class="category">
+                  <a href="[##_rctps_rep_category_link_##]"
+                    >[##_rctps_rep_category_##]</a
+                  >
+                </div>
+              </li>
+            </s_rctps_popular_rep>
+          </ul>
+        </s_sidebar_element>
+        <s_sidebar_element>
+          <ul class="recentComment">
             <s_rctrp_rep>
               <li>
-                <a
-                  href="[##_rctrp_rep_link_##]"
-                  title="[##_rctrp_rep_name_##]〃[##_rctrp_rep_time_##]"
-                  >[##_rctrp_rep_desc_##]</a
-                >
+                <a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+                <div class="name">[##_rctrp_rep_name_##]</div>
+                <div class="date">[##_rctrp_rep_time_##]</div>
               </li>
             </s_rctrp_rep>
           </ul>
-        </div>
-      </s_sidebar_element>
-      <s_sidebar_element>
-        <div id="links">
-          <ul>
-            <s_link_rep>
+        </s_sidebar_element>
+        <s_sidebar_element>[##_category_list_##]</s_sidebar_element>
+        <s_sidebar_element>
+          <ul class="tagbox">
+            <s_random_tags>
               <li>
-                <a href="[##_link_url_##]" target="_blank">[##_link_site_##]</a>
+                <a href="[##_tag_link_##]">[##_tag_name_##]</a>
+                <div class="class">[##_tag_class_##]</div>
               </li>
-            </s_link_rep>
+            </s_random_tags>
           </ul>
-        </div>
-      </s_sidebar_element>
-      <s_sidebar_element>
-        <div id="counter">
-          <span class="yesterday">[##_count_yesterday_##]</span>
-          <span class="today">[##_count_today_##]</span>
-          <span class="total">[##_count_total_##]</span>
-        </div>
-      </s_sidebar_element>
-    </s_sidebar>
+        </s_sidebar_element>
+        <s_sidebar_element>
+          <div class="counter">
+            <div class="total">[##_count_total_##]</div>
+            <div class="today">[##_count_today_##]</div>
+            <div class="yesterday">[##_count_yesterday_##]</div>
+          </div>
+        </s_sidebar_element>
+      </s_sidebar>
+    </div>
     <s_tag>
-      <div id="tags">
+      <ul class="taglog">
         <s_tag_rep>
-          <a href="[##_tag_link_##]">#[##_tag_name_##]</a>
-        </s_tag_rep>
-      </div>
-    </s_tag>
-    <s_list>
-      <ul id="list">
-        <s_list_rep>
           <li>
-            <s_list_rep_thumbnail>
-              <img class="thumbnail" src="[##_list_rep_thumbnail_##]" />
-            </s_list_rep_thumbnail>
-            <a class="title" href="[##_list_rep_link_##]"
-              >[##_list_rep_title_##]</a
-            >
-            <span class="date">[##_list_rep_regdate_##]</span>
-            <p class="summary">[##_list_rep_summary_##]</p>
+            <a href="[##_tag_link_##]">[##_tag_name_##]</a>
+            <div class="class">[##_tag_class_##]</div>
           </li>
-        </s_list_rep>
+        </s_tag_rep>
       </ul>
+    </s_tag>
+    <s_guest>
+      <ul class="guestbook">
+        <s_guest_container>
+          <s_guest_rep>
+            <li>
+              <div class="id">[##_guest_rep_id_##]</div>
+              <div class="class">[##_guest_rep_class_##]</div>
+              <div class="name">[##_guest_rep_name_##]</div>
+              <div class="date">[##_guest_rep_date_##]</div>
+              <div class="desc">[##_guest_rep_desc_##]</div>
+              <s_guest_reply_container>
+                <ul class="reply">
+                  <s_guest_reply_rep>
+                    <li>
+                      <div class="id">[##_guest_rep_id_##]</div>
+                      <div class="class">[##_guest_rep_class_##]</div>
+                      <div class="name">[##_guest_rep_name_##]</div>
+                      <div class="date">[##_guest_rep_date_##]</div>
+                      <div class="desc">[##_guest_rep_desc_##]</div>
+                    </li>
+                  </s_guest_reply_rep>
+                </ul>
+              </s_guest_reply_container>
+            </li>
+          </s_guest_rep>
+        </s_guest_container>
+      </ul>
+    </s_guest>
+    <s_list>
+      <div class="list">
+        <div class="name">[##_list_conform_##]</div>
+        <div class="cnt">[##_list_count_##]</div>
+        <div class="desc">[##_list_description_##]</div>
+        <div class="class">[##_list_style_##]</div>
+        <s_list_image>
+          <div class="imageUrl">[##_list_image_##]</div>
+        </s_list_image>
+        <ul class="posts">
+          <s_list_rep>
+            <li>
+              <a href="[##_list_rep_link_##]">[##_list_rep_title_text_##]</a>
+              <div class="date">[##_list_rep_regdate_##]</div>
+              <div class="detailDate">
+                <div class="year">[##_list_rep_date_year_##]</div>
+                <div class="month">[##_list_rep_date_month_##]</div>
+                <div class="day">[##_list_rep_date_day_##]</div>
+                <div class="hour">[##_list_rep_date_hour_##]</div>
+                <div class="minute">[##_list_rep_date_minute_##]</div>
+                <div class="second">[##_list_rep_date_second_##]</div>
+              </div>
+              <div class="category">
+                <a href="[##_list_rep_category_link_##]"
+                  >[##_list_rep_category_##]</a
+                >
+              </div>
+              <div class="cnt">[##_list_rep_rp_cnt_##]</div>
+              <div class="author">[##_list_rep_author_##]</div>
+              <div class="summary">[##_list_rep_summary_##]</div>
+              <s_list_rep_thumbnail>
+                <div class="thumbnail">[##_list_rep_thumbnail_##]</div>
+              </s_list_rep_thumbnail>
+            </li>
+          </s_list_rep>
+        </ul>
+        <s_paging>
+          <div class="paging">
+            <div class="prev">
+              <a [##_prev_page_##]>PREV</a>
+            </div>
+            <ul class="numbox">
+              <s_paging_rep>
+                <li>
+                  <a [##_paging_rep_link_##] class="num"
+                    >[[##_paging_rep_link_num_##]]</a
+                  >
+                </li>
+              </s_paging_rep>
+            </ul>
+            <div class="next">
+              <a [##_next_page_##]>NEXT</a>
+            </div>
+          </div>
+        </s_paging>
+      </div>
     </s_list>
     <s_article_rep>
-      <div id="article_head">
-        <h2>
+      <div class="post">
+        <s_permalink_article_rep>
           <a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
-        </h2>
-        <div class="post-meta">
-          <span class="author">[##_article_rep_author_##]</span>
-          <span class="meta-date">[##_article_rep_date_##]</span>
-          [##_s_ad_isolation_##]
-        </div>
-        <div class="date">[##_article_rep_date_##]</div>
-      </div>
-
-      <div id="article_body" class="entry">
-        <div class="tag_label">
-          <s_tag_label>
-            <span>[##_tag_label_rep_##]</span>
-          </s_tag_label>
-        </div>
-
-        <div class="article">[##_article_rep_desc_##]</div>
-
-        <s_ad_div>
-          <div class="admin">
-            <a href="[##_s_ad_m_link_##]">Modify</a>
-            <span class="line">|</span>
-            <a href="#" onclick="[##_s_ad_d_onclick_##]">Delete</a>
+          <div class="category">
+            <a href="[##_article_rep_category_link_##]"
+              >[##_article_rep_category_##]</a
+            >
           </div>
-        </s_ad_div>
-
-        <s_rp>
-          <div id="comments">[##_comment_group_##]</div>
-        </s_rp>
+          <div class="date">[##_article_rep_date_##]</div>
+          <div class="simpleDate">[##_article_rep_simple_date_##]</div>
+          <div class="detailDate">
+            <div class="year">[##_article_rep_date_year_##]</div>
+            <div class="month">[##_article_rep_date_month_##]</div>
+            <div class="day">[##_article_rep_date_day_##]</div>
+            <div class="hour">[##_article_rep_date_hour_##]</div>
+            <div class="minute">[##_article_rep_date_minute_##]</div>
+            <div class="second">[##_article_rep_date_second_##]</div>
+          </div>
+          <div class="author">[##_article_rep_author_##]</div>
+          <div class="thumbnail">
+            <s_article_rep_thumbnail>
+              <div class="imageUrl">[##_article_rep_thumbnail_url_##]</div>
+              <div class="rawImageUrl">
+                [##_article_rep_thumbnail_raw_url_##]
+              </div>
+            </s_article_rep_thumbnail>
+          </div>
+          <div class="cnt">
+            <s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>
+          </div>
+          <div class="article">[##_article_rep_desc_##]</div>
+          <div class="related">
+            <s_article_related>
+              <div class="type">[##_article_related_rep_type_##]</div>
+              <a href="[##_article_related_rep_link_##]"
+                >[##_article_related_rep_title_##]</a
+              >
+              <div class="date">[##_article_related_rep_date_##]</div>
+              <s_article_related_rep_thumbnail>
+                <div class="thumbnail">
+                  [##_article_related_rep_thumbnail_link_##]
+                </div>
+              </s_article_related_rep_thumbnail>
+            </s_article_related>
+          </div>
+          <div class="prev">
+            <div class="type">[##_article_prev_type_##]</div>
+            <a href="[##_article_prev_link_##]">[##_article_prev_title_##]</a>
+            <div class="date">[##_article_prev_date_##]</div>
+            <s_article_prev_thumbnail>
+              <div class="thumbnail">[##_article_prev_thumbnail_link_##]</div>
+            </s_article_prev_thumbnail>
+          </div>
+          <div class="next">
+            <div class="type">[##_article_next_type_##]</div>
+            <a href="[##_article_next_link_##]">[##_article_next_title_##]</a>
+            <div class="date">[##_article_next_date_##]</div>
+            <s_article_next_thumbnail>
+              <div class="thumbnail">[##_article_next_thumbnail_link_##]</div>
+            </s_article_next_thumbnail>
+          </div>
+          <s_rp>
+            <ul class="comment">
+              <s_rp_container>
+                <s_rp_rep>
+                  <li id="[##_rp_rep_id_##]">
+                    <div class="id">[##_rp_rep_id_##]</div>
+                    <div class="class">[##_rp_rep_class_##]</div>
+                    <div class="name">[##_rp_rep_name_##]</div>
+                    <div class="logo">[##_rp_rep_logo_##]</div>
+                    <div class="date">[##_rp_rep_date_##]</div>
+                    <div class="desc">[##_rp_rep_desc_##]</div>
+                    <div class="url">[##_rp_rep_link_##]</div>
+                    <ul class="reply">
+                      <s_rp2_container>
+                        <s_rp2_rep>
+                          <li id="[##_rp_rep_id_##]">
+                            <div class="id">[##_rp_rep_id_##]</div>
+                            <div class="class">[##_rp_rep_class_##]</div>
+                            <div class="name">[##_rp_rep_name_##]</div>
+                            <div class="logo">[##_rp_rep_logo_##]</div>
+                            <div class="date">[##_rp_rep_date_##]</div>
+                            <div class="desc">[##_rp_rep_desc_##]</div>
+                            <div class="url">[##_rp_rep_link_##]</div>
+                          </li>
+                        </s_rp2_rep>
+                      </s_rp2_container>
+                    </ul>
+                  </li>
+                </s_rp_rep>
+              </s_rp_container>
+            </ul>
+          </s_rp>
+        </s_permalink_article_rep>
       </div>
+      <ul class="posts">
+        <s_index_article_rep>
+          <li>
+            <a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+            <div class="category">
+              <a href="[##_article_rep_category_link_##]"
+                >[##_article_rep_category_##]</a
+              >
+            </div>
+            <div class="date">[##_article_rep_date_##]</div>
+            <div class="simpleDate">[##_article_rep_simple_date_##]</div>
+            <div class="detailDate">
+              <div class="year">[##_article_rep_date_year_##]</div>
+              <div class="month">[##_article_rep_date_month_##]</div>
+              <div class="day">[##_article_rep_date_day_##]</div>
+              <div class="hour">[##_article_rep_date_hour_##]</div>
+              <div class="minute">[##_article_rep_date_minute_##]</div>
+              <div class="second">[##_article_rep_date_second_##]</div>
+            </div>
+            <div class="author">[##_article_rep_author_##]</div>
+            <div class="summary">[##_article_rep_summary_##]</div>
+            <div class="thumbnail">
+              <s_article_rep_thumbnail>
+                <div class="imageUrl">[##_article_rep_thumbnail_url_##]</div>
+                <div class="rawImageUrl">
+                  [##_article_rep_thumbnail_raw_url_##]
+                </div>
+              </s_article_rep_thumbnail>
+            </div>
+            <div class="cnt">
+              <s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>
+            </div>
+          </li>
+        </s_index_article_rep>
+      </ul>
     </s_article_rep>
-    <div id="paging">
-      <s_paging>
-        <a [##_prev_page_##] class="prev [##_no_more_prev_##]">
-          PREV
-          <span class="screen_out"> 이전 </span>
-        </a>
-        <s_paging_rep
-          ><a class="numbox" [##_paging_rep_link_##]
-            >[##_paging_rep_link_num_##]</a
-          ></s_paging_rep
-        >
-        <a [##_next_page_##] class="next [##_no_more_next_##]">
-          NEXT
-          <span class="screen_out"> 다음 </span>
-        </a>
-      </s_paging>
-    </div>
+    <s_notice_rep>
+      <div class="notice">
+        <s_permalink_article_rep>
+          <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+          <div class="category">
+            <a href="[##_notice_rep_category_link_##]"
+              >[##_notice_rep_category_##]</a
+            >
+          </div>
+          <div class="date">[##_notice_rep_date_##]</div>
+          <div class="simpleDate">[##_notice_rep_simple_date_##]</div>
+          <div class="detailDate">
+            <div class="year">[##_notice_rep_date_year_##]</div>
+            <div class="month">[##_notice_rep_date_month_##]</div>
+            <div class="day">[##_notice_rep_date_day_##]</div>
+            <div class="hour">[##_notice_rep_date_hour_##]</div>
+            <div class="minute">[##_notice_rep_date_minute_##]</div>
+            <div class="second">[##_notice_rep_date_second_##]</div>
+          </div>
+          <div class="author">[##_notice_rep_author_##]</div>
+          <div class="thumbnail">
+            <s_notice_rep_thumbnail>
+              <div class="imageUrl">[##_notice_rep_thumbnail_url_##]</div>
+              <div class="rawImageUrl">
+                [##_notice_rep_thumbnail_raw_url_##]
+              </div>
+            </s_notice_rep_thumbnail>
+          </div>
+          <div class="article">[##_notice_rep_desc_##]</div>
+        </s_permalink_article_rep>
+      </div>
+      <ul class="notices">
+        <s_index_article_rep>
+          <li>
+            <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+            <div class="category">
+              <a href="[##_notice_rep_category_link_##]"
+                >[##_notice_rep_category_##]</a
+              >
+            </div>
+            <div class="date">[##_notice_rep_date_##]</div>
+            <div class="simpleDate">[##_notice_rep_simple_date_##]</div>
+            <div class="detailDate">
+              <div class="year">[##_notice_rep_date_year_##]</div>
+              <div class="month">[##_notice_rep_date_month_##]</div>
+              <div class="day">[##_notice_rep_date_day_##]</div>
+              <div class="hour">[##_notice_rep_date_hour_##]</div>
+              <div class="minute">[##_notice_rep_date_minute_##]</div>
+              <div class="second">[##_notice_rep_date_second_##]</div>
+            </div>
+            <div class="author">[##_notice_rep_author_##]</div>
+            <div class="summary">[##_notice_rep_summary_##]</div>
+            <div class="thumbnail">
+              <s_notice_rep_thumbnail>
+                <div class="imageUrl">[##_notice_rep_thumbnail_url_##]</div>
+                <div class="rawImageUrl">
+                  [##_notice_rep_thumbnail_raw_url_##]
+                </div>
+              </s_notice_rep_thumbnail>
+            </div>
+          </li>
+        </s_index_article_rep>
+      </ul>
+    </s_notice_rep>
   </s_t3>
 </div>
-<script>
-  setTimeout(() =>
-    document.body.removeChild(document.getElementById("red_pill"))
-  );
-</script>

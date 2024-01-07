@@ -31,38 +31,33 @@ Tistory Blog Skin을 위한 Tistory API 라이브러리입니다.
 
 - [ ] blog info
   - [ ] title
-  - [x] blog image
+  - [ ] blog image
   - [ ] description
   - [ ] blogger
   - [ ] blog link
   - [ ] rss feed
   - [ ] tag log link
   - [ ] guestbook link
-  - [ ] page title
   - [ ] blog menu
-  - [ ] body id
-- [ ] ad
-  - [ ] upper
-  - [ ] lower
 - [ ] home cover
 - [ ] tag
 - [ ] post
-  - [x] default post
-  - [x] comment
+  - [ ] default post
+  - [ ] comment
   - [ ] notice
   - [ ] protected
   - [ ] page
-- [x] list
-  - [x] list paging
+- [ ] list
+  - [ ] list paging
 - [ ] sidebar
   - [ ] recent notice
   - [ ] recent post
   - [ ] popular post
   - [ ] recent comment
-  - [x] category
+  - [ ] category
   - [ ] random tag
   - [ ] counter
-  - [x] search
+  - [ ] search
 
 ### Dev Tools
 
